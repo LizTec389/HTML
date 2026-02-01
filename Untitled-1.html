@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso General de HTML - W3Schools Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        header {
+            background-color: #04AA6D; /* Color verde de W3Schools */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <h1>HTML Tutorial: Conceptos Combinados</h1>
+        <p>Aprendiendo HTML Elements, Attributes, Headings y más.</p>
+    </header>
+
+    <section>
+        <h2>HTML Basic & Introduction</h2>
+        <p>Este es un documento HTML básico. Todo documento debe empezar con la declaración <code>!DOCTYPE html</code>.</p>
+    </section>
+
+    <section>
+        <h2>HTML Headings (Títulos)</h2>
+        <h1>Título H1</h1>
+        <h2>Título H2</h2>
+        <h3>Título H3</h3>
+        <p>Los títulos van del h1 al h6.</p>
+    </section>
+
+    <section>
+        <h2>HTML Colors & CSS</h2>
+        <p style="background-color:Tomato; color:white;">Este párrafo usa un color de fondo Tomato.</p>
+        <p style="color:DodgerBlue;">Este texto es azul usando estilos en línea (CSS).</p>
+        <p style="border:2px solid Violet;">Este párrafo tiene un borde violeta.</p>
+    </section>
+
+    <section>
+        <h2>HTML Paragraphs & Formatting</h2>
+        <p>Este es un párrafo normal.</p>
+        <p>Este párrafo tiene texto en <b>negrita</b>, texto en <i>cursiva</i>, texto <mark>resaltado</mark> y texto <del>tachado</del>.</p>
+    </section>
+
+    <section>
+        <h2>HTML Links (Enlaces)</h2>
+        <p>Visita <a href="https://www.w3schools.com" target="_blank">W3Schools</a> para más tutoriales.</p>
+    </section>
+
+    <section>
+        <h2>HTML Images (Imágenes)</h2>
+        <p>Atributos: src (ruta) y alt (texto alternativo).</p>
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Casa Italiana" width="300">
+    </section>
+
+    <section>
+        <h2>HTML Tables (Tablas)</h2>
+        <table border="1" style="width:100%; border-collapse: collapse;">
+            <tr>
+                <th>Nombre</th>
+                <th>Lenguaje</th>
+            </tr>
+            <tr>
+                <td>Lizeth</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>Carrizales</td>
+                <td>CSS</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>HTML Lists (Listas)</h2>
+        <h3>Lista Desordenada:</h3>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+        <h3>Lista Ordenada:</h3>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>HTML Block & Inline</h2>
+        <div style="border: 1px solid black; padding: 10px;">
+            Esto es un <b>DIV</b>. Es un elemento de <strong>bloque</strong> (ocupa todo el ancho).
+        </div>
+        <p>
+            Esto es un <span style="color: blue; border: 1px solid blue;">SPAN</span>. Es un elemento <strong>inline</strong> (solo ocupa el espacio de su contenido).
+        </p>
+    </section>
+
+    <section>
+        <h2>HTML Comments</h2>
+        <p>Mira el código fuente (CTRL+U) para ver los comentarios ocultos.</p>
+        </section>
+
+    <section>
+        <h2>HTML Quotations (Citas)</h2>
+        <blockquote cite="https://www.w3schools.com">
+            "El aprendizaje nunca agota la mente."
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>HTML Classes & Id</h2>
+        <p class="nota-informativa">Esta es una oración con una <strong>Clase</strong> (se puede repetir).</p>
+        <div id="mi-seccion-unica">Este contenedor tiene un <strong>ID</strong> (debe ser único en la página).</div>
+    </section>
+
+    <section>
+        <h2>HTML Buttons</h2>
+        <button type="button" onclick="alert('¡Botón presionado!')">Haz clic aquí</button>
+    </section>
+
+    <section>
+        <h2>HTML Iframes</h2>
+        <p>Un iframe sirve para mostrar una página dentro de otra:</p>
+        <iframe src="https://www.wikipedia.org" title="Ejemplo de Iframe" width="100%" height="200" style="border:1px solid gray;"></iframe>
+    </section>
+
+    <section>
+        <h2>HTML JavaScript</h2>
+        <p id="texto-js">Este texto cambiará cuando presiones el botón de abajo.</p>
+        <button type="button" onclick="document.getElementById('texto-js').innerHTML = '<b>¡Magia! El contenido cambió con JS.</b>'">
+            Modificar Texto
+        </button>
+    </section>
+
+    <section>
+        <h2>HTML File Paths (Rutas de Archivos)</h2>
+        <p>Para insertar imágenes o archivos usamos rutas relativas o absolutas:</p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools Logo" style="width:150px;">
+    </section>
+
+    <section>
+        <h2>HTML Head & Layout</h2>
+        <p>El <i>Head</i> no se ve (está arriba en el código), pero el <i>Layout</i> organiza la página:</p>
+        <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+            <p>Ejemplo de pie de página (Footer) - Parte del Layout Semántico</p>
+        </footer>
+    </section>
+
+</body>
+</html>
