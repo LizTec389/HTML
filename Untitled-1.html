@@ -167,7 +167,49 @@
         <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
             <p>Ejemplo de pie de página (Footer) - Parte del Layout Semántico</p>
         </footer>
+        <section>
+        <h2>HTML Forms & Inputs</h2>
+        <p>Los formularios permiten recolectar datos del usuario. Aquí verás elementos, tipos de entrada y atributos básicos.</p>
+
+        <form action="/enviar_datos.php" method="post" style="background: #f0f0f0; padding: 20px; border-radius: 5px;">
+            
+            <label for="nombre">Nombre (Input Type Text):</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <br><br>
+
+            <label for="correo">Email (Input Type Email):</label><br>
+            <input type="email" id="correo" name="correo" value="ejemplo@correo.com">
+            <br><br>
+
+            <label for="edad">Edad (Min 18 - Max 99):</label><br>
+            <input type="number" id="edad" name="edad" min="18" max="99" value="25">
+            <br><br>
+
+            <label for="pais">País (Select Element):</label><br>
+            <select id="pais" name="pais">
+                <option value="mexico">México</option>
+                <option value="españa">España</option>
+                <option value="argentina">Argentina</option>
+            </select>
+            <br><br>
+
+            <p>Género:</p>
+            <input type="radio" id="m" name="genero" value="masculino">
+            <label for="m">Masculino</label>
+            <input type="radio" id="f" name="genero" value="femenino">
+            <label for="f">Femenino</label>
+            <br><br>
+
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los términos y condiciones (Required)</label>
+            <br><br>
+
+            <input type="submit" value="Enviar Formulario" style="background-color: #04AA6D; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+            
+            <input type="reset" value="Limpiar" style="padding: 10px 20px; cursor: pointer;">
+        </form>
     </section>
 
 </body>
 </html>
+
